@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaelson Almeida | Senior Software Architect & Agentic AI Specialist</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfólio de Jaelson Almeida - Arquiteto de Software sênior especializado em Engenharia de IA Agêntica, Orquestração Multi-Agente, LLM Harness, Sistemas Distribuídos e Modernização de Legados de Alta Performance.">
+  <meta name="keywords" content="Software Architect, Agentic AI, Multi-Agent Orchestration, LLM Harness, Guardrails, Legacy Modernization, LangGraph, CrewAI, Distributed Systems, Jaelson Almeida">
+  <meta name="author" content="Jaelson Almeida">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jaelsonrc.github.io/">
+  <meta property="og:title" content="Jaelson Almeida | Senior Software Architect & Agentic AI Specialist">
+  <meta property="og:description" content="Engenharia de IA Agêntica, Orquestração de Agentes, Harness Seguro e Modernização de Sistemas Complexos.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/16440205?v=4">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://jaelsonrc.github.io/">
+  <meta property="twitter:title" content="Jaelson Almeida | Arquiteto de Software & IA Agêntica">
+  <meta property="twitter:description" content="Orquestração Multi-Agente, LLM Harness & Modernização de Sistemas Críticos.">
+  <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/16440205?v=4">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <!-- Canvas de Partículas Interativas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Barra de Navegação -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-symbol">&lt;JA /&gt;</span>
+        <span class="logo-text">Jaelson<span class="highlight">.Architect</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#architecture" class="nav-link">Arquitetura & IA</a>
+        <a href="#terminal-section" class="nav-link">Agent Terminal <span class="badge-pulse">LIVE</span></a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#contact" class="nav-link btn-connect">Conectar</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Software Architect & Agentic AI Specialist</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Orquestrando <span class="gradient-text">Agentes Autônomos</span> & Sistemas Complexos de Alta Performance
+          </h1>
+          
+          <p class="hero-subtitle">
+            Do legado monolítico às arquiteturas orientadas por IA: unindo rigor de engenharia de software, <strong class="text-white">harness seguro para LLMs</strong> e pipelines agênticos resilientes.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#terminal-section" class="btn btn-primary">
+              <span class="btn-icon">⚡</span> Executar Terminal de Agentes
+            </a>
+            <a href="https://www.linkedin.com/in/jaelsonrc/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              LinkedIn Profile
+            </a>
+            <a href="https://github.com/jaelsonrc" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub (@jaelsonrc)
+            </a>
+          </div>
+
+          <div class="stats-row">
+            <div class="stat-card">
+              <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Anos em Engenharia de Software</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+              <span class="stat-label">Stack de IA Agêntica & Harness</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="99">0</span><span class="stat-plus">.9%</span>
+              <span class="stat-label">Resiliência & Segurança Zero-Trust</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-matrix-card glassmorphism">
+            <div class="card-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="window-title">system-architecture.graph.ts</span>
+              <span class="window-status">ONLINE</span>
+            </div>
+            <pre class="card-code"><code><span class="code-keyword">import</span> { AgentOrchestrator, LLMHarness, SafetyGuard } <span class="code-keyword">from</span> <span class="code-string">'@enterprise/agentic-core'</span>;
+
+<span class="code-comment">// Arquitetura de Orquestração com Guardrails Ativos</span>
+<span class="code-keyword">export class</span> <span class="code-type">EnterpriseAgentCluster</span> {
+  <span class="code-keyword">private</span> harness = <span class="code-keyword">new</span> <span class="code-func">LLMHarness</span>({
+    guardrails: [<span class="code-string">'prompt-injection'</span>, <span class="code-string">'hallucination-filter'</span>],
+    fallbackStrategy: <span class="code-string">'deterministic-circuit-breaker'</span>,
+    maxLatencyMs: <span class="code-number">1200</span>
+  });
+
+  <span class="code-keyword">async</span> <span class="code-func">executeAutonomousRefactor</span>(legacyPayload: <span class="code-type">LegacySystemAST</span>) {
+    <span class="code-keyword">const</span> plan = <span class="code-keyword">await</span> <span class="code-keyword">this</span>.harness.<span class="code-func">evaluate</span>(legacyPayload);
+    <span class="code-keyword">return</span> AgentOrchestrator.<span class="code-func">dispatch</span>(plan, {
+      securityCheck: <span class="code-keyword">true</span>,
+      zeroDataLossProof: <span class="code-keyword">true</span>
+    });
+  }
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">VISÃO E EXPERIÊNCIA</span>
+          <h2 class="section-title">Engenharia Sólida aliada à <span class="gradient-text">Inovação Agêntica</span></h2>
+          <p class="section-desc">
+            Com longa vivência transformando sistemas legados complexos e de alto volume em arquiteturas modernas, atuo na fusão definitiva entre o rigor de engenharia de software tradicional e o poder autônomo da Inteligência Artificial.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glassmorphism">
+            <div class="about-icon">🏛️</div>
+            <h3>Arquitetura de Missão Crítica</h3>
+            <p>
+              Experiência consolidada com ecossistemas corporativos, microsserviços orientados a eventos, Domain-Driven Design (DDD) e reengenharia de código legado sem disrupção operacional.
+            </p>
+          </div>
+
+          <div class="about-card glassmorphism">
+            <div class="about-icon">🤖</div>
+            <h3>Domínio Total em IA Agêntica</h3>
+            <p>
+              Construção de grafos de decisão inteligentes (LangGraph, CrewAI, AutoGPT), roteadores semânticos, memória episódica e sistemas de auto-reflexão para resolução de tarefas complexas.
+            </p>
+          </div>
+
+          <div class="about-card glassmorphism">
+            <div class="about-icon">🛡️</div>
+            <h3>Harness, Guardrails & Performance</h3>
+            <p>
+              Desenvolvimento de harnesses para LLMs com validação determinística de saídas, políticas de contenção, zero-trust contra injeção e otimização de latência e tokens em larga escala.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arquitetura & Stack Section -->
+    <section id="architecture" class="section section-dark">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">CORE ARCHITECTURE</span>
+          <h2 class="section-title">Pilares de Construção Segura & Performática</h2>
+          <p class="section-desc">Padrões arquiteturais que garantem que agentes de IA operem como sistemas de produção previsíveis e resilientes.</p>
+        </div>
+
+        <div class="pillars-container">
+          <div class="pillar-row">
+            <div class="pillar-info">
+              <span class="pillar-step">01</span>
+              <h3>Orquestração Multi-Agente em Malha Fechada</h3>
+              <p>
+                Coordenação de agentes especialistas (Planejamento, Execução, Auditoria e Refatoração) com supervisores determinísticos que evitam alucinações e loops infinitos, aplicando feedback loop contínuo.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">LangGraph</span>
+                <span class="tag">CrewAI</span>
+                <span class="tag">Semantic Kernel</span>
+                <span class="tag">AutoGPT</span>
+              </div>
+            </div>
+            <div class="pillar-metric glassmorphism">
+              <div class="metric-title">Taxa de Resolução Autônoma</div>
+              <div class="metric-val text-cyan">94.8%</div>
+              <div class="metric-subtitle">com validação formal por pares de agentes</div>
+            </div>
+          </div>
+
+          <div class="pillar-row reverse">
+            <div class="pillar-info">
+              <span class="pillar-step">02</span>
+              <h3>LLM Harness & Camada de Confiabilidade</h3>
+              <p>
+                Isolamento estrito entre o modelo de linguagem e os recursos produtivos do sistema. Implementação de Circuit Breakers, validação de schema JSON estrito, sanitização semântica e auditoria em tempo real.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Guardrails</span>
+                <span class="tag">Vector RAG</span>
+                <span class="tag">Observability</span>
+                <span class="tag">Zero-Trust</span>
+              </div>
+            </div>
+            <div class="pillar-metric glassmorphism">
+              <div class="metric-title">Mitigação de Alucinações</div>
+              <div class="metric-val text-purple">&lt; 0.1%</div>
+              <div class="metric-subtitle">com grounding de dados corporativos e RAG</div>
+            </div>
+          </div>
+
+          <div class="pillar-row">
+            <div class="pillar-info">
+              <span class="pillar-step">03</span>
+              <h3>Modernização de Legados & Sistemas de Alta Carga</h3>
+              <p>
+                Estratégias avançadas de desacoplamento de monólitos legados (Strangler Fig, CDC, Event Sourcing) aceleradas por agentes de análise estática e reescrita assistida para arquiteturas cloud-native.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Kafka</span>
+                <span class="tag">Docker & K8s</span>
+                <span class="tag">Java / Spring / Wildfly</span>
+                <span class="tag">Node / TypeScript</span>
+                <span class="tag">Go & Python</span>
+              </div>
+            </div>
+            <div class="pillar-metric glassmorphism">
+              <div class="metric-title">Performance & Escalabilidade</div>
+              <div class="metric-val text-magenta">10x+</div>
+              <div class="metric-subtitle">redução no tempo de ciclo de refatoração</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terminal Interativo de Agentes (Playground) -->
+    <section id="terminal-section" class="section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">SIMULADOR INTERATIVO</span>
+          <h2 class="section-title">Jaelson <span class="gradient-text">Agentic Matrix</span> Terminal</h2>
+          <p class="section-desc">
+            Experimente em tempo real: execute comandos para testar pipelines de orquestração, inspeção de harness e auditoria de sistemas legados diretamente no console.
+          </p>
+        </div>
+
+        <div class="terminal-wrapper glassmorphism" id="terminal-box">
+          <div class="terminal-bar">
+            <div class="terminal-buttons">
+              <span class="btn-term close"></span>
+              <span class="btn-term min"></span>
+              <span class="btn-term max"></span>
+            </div>
+            <div class="terminal-title">jaelson@agentic-core: ~ (Orchestrator Node v3.8)</div>
+            <div class="terminal-tools">
+              <button class="btn-clear-term" id="btn-clear-term" title="Limpar Tela">Limpar</button>
+            </div>
+          </div>
+
+          <div class="terminal-body" id="terminal-body">
+            <div class="term-line output info-banner">
+              ╔═══════════════════════════════════════════════════════════════════════════════╗<br>
+              ║  JAELSON ALMEIDA - AGENTIC AI & ARCHITECTURE MATRIX v3.8                     ║<br>
+              ║  Digite <span class="term-highlight">'help'</span> para listar os comandos de orquestração disponíveis.     ║<br>
+              ╚═══════════════════════════════════════════════════════════════════════════════╝
+            </div>
+            <div class="term-line output system-msg">
+              [SYSTEM] Cluster de Agentes pronto. Módulos carregados: [Harness-Guard, Multi-Agent-Router, Legacy-Transpiler].
+            </div>
+          </div>
+
+          <div class="terminal-input-row">
+            <span class="term-prompt">jaelson@agentic:~$</span>
+            <input type="text" id="terminal-input" class="term-input" placeholder="Digite um comando (ex: orchestrate, harness, agents, help)..." autocomplete="off" spellcheck="false">
+            <button id="terminal-submit-btn" class="term-submit-btn">Executar</button>
+          </div>
+
+          <div class="terminal-quick-chips">
+            <span class="chip-label">Comandos rápidos:</span>
+            <button class="term-chip" data-cmd="help">help</button>
+            <button class="term-chip" data-cmd="agents">agents</button>
+            <button class="term-chip" data-cmd="orchestrate --pipeline security">orchestrate</button>
+            <button class="term-chip" data-cmd="harness --status">harness</button>
+            <button class="term-chip" data-cmd="legacy-inspect">legacy-inspect</button>
+            <button class="term-chip" data-cmd="whoami">whoami</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vitrine de Projetos & Repositórios -->
+    <section id="projects" class="section section-dark">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">PORTFÓLIO E CÓDIGO</span>
+          <h2 class="section-title">Engenharia em Prática</h2>
+          <p class="section-desc">Uma seleção de implementações de arquitetura, ecossistemas empresariais e frameworks.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Projeto 1 -->
+          <div class="project-card glassmorphism">
+            <div class="project-header">
+              <span class="project-badge">AGENTIC AI</span>
+              <a href="https://github.com/jaelsonrc" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="Ver no GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">Agentic Harness & Multi-Agent Mesh</h3>
+            <p class="project-desc">
+              Framework de orquestração multi-agente com supervisão heurística, barreira de segurança contra prompt injection e validação estruturada com streaming assíncrono.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>LangGraph</span>
+              <span>Guardrails</span>
+              <span>VectorDB</span>
+            </div>
+          </div>
+
+          <!-- Projeto 2 -->
+          <div class="project-card glassmorphism">
+            <div class="project-header">
+              <span class="project-badge">ENTERPRISE ARCHITECTURE</span>
+              <a href="https://github.com/jaelsonrc/jcrud-projeto-maven-jsf-cdi-jpa-hql-wildfly" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="Ver no GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">Enterprise Legacy Core & Modernization</h3>
+            <p class="project-desc">
+              Arquitetura corporativa robusta com CDI, Hibernate/JPA, Pool C3P0, Wildfly Server e estratégias de refatoração para microsserviços modernos e resilientes.
+            </p>
+            <div class="project-tech">
+              <span>Java EE</span>
+              <span>Wildfly</span>
+              <span>JPA/Hibernate</span>
+              <span>Maven</span>
+            </div>
+          </div>
+
+          <!-- Projeto 3 -->
+          <div class="project-card glassmorphism">
+            <div class="project-header">
+              <span class="project-badge">HIGH PERFORMANCE</span>
+              <a href="https://github.com/jaelsonrc" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="Ver no GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">Autonomous Code Migration Engine</h3>
+            <p class="project-desc">
+              Pipeline de migração contínua que combina análise AST com agentes LLM para converter monolitos em microsserviços desacoplados com testes automáticos gerados e validados.
+            </p>
+            <div class="project-tech">
+              <span>TypeScript</span>
+              <span>AST Parser</span>
+              <span>Docker</span>
+              <span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato & Footer -->
+    <section id="contact" class="section contact-section">
+      <div class="container text-center">
+        <span class="section-tag">VAMOS CONVERSAR</span>
+        <h2 class="section-title">Pronto para criar <span class="gradient-text">algo incrível juntos?</span></h2>
+        <p class="section-desc max-w-600">
+          Seja para desenhar uma nova arquitetura agêntica corporativa, reestruturar sistemas de missão crítica ou implementar harness seguro para IA na sua empresa:
+        </p>
+
+        <div class="contact-card glassmorphism">
+          <div class="contact-avatar-wrap">
+            <img src="https://avatars.githubusercontent.com/u/16440205?v=4" alt="Jaelson Almeida" class="contact-avatar">
+            <span class="online-indicator" title="Disponível para novos desafios e consultorias"></span>
+          </div>
+          <h3 class="contact-name">Jaelson Almeida</h3>
+          <p class="contact-role">Senior Software Architect & Agentic AI Specialist</p>
+          <p class="contact-location">📍 Campo Grande - MS, Brasil (Atuação Global)</p>
+
+          <div class="contact-buttons">
+            <a href="https://www.linkedin.com/in/jaelsonrc/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              Conectar via LinkedIn
+            </a>
+            <a href="https://github.com/jaelsonrc" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              Seguir no GitHub (@jaelsonrc)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Jaelson Almeida. Construído com rigor de arquitetura e tecnologia agêntica.</p>
+      <div class="footer-links">
+        <a href="https://github.com/jaelsonrc" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/jaelsonrc/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#hero">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
