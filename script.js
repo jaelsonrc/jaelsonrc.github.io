@@ -1,5 +1,5 @@
 /**
- * JAELSON ALMEIDA - ARCHITECT & AGENTIC AI PORTFOLIO SCRIPT
+ * JAELSON R. CUNHA - ARCHITECT & AGENTIC AI PORTFOLIO SCRIPT
  * Background Canvas Particles, Interactive Agent Terminal, Counters & Navigation
  */
 
@@ -164,7 +164,7 @@ function initAgentTerminal() {
       `  • <span class="term-highlight">orchestrate [options]</span>  : Simula a orquestração autônoma de um pipeline multi-agente`,
       `  • <span class="term-highlight">harness --status</span>       : Inspeciona guardrails, mitigação de alucinação e latência`,
       `  • <span class="term-highlight">legacy-inspect</span>         : Executa análise de desacoplamento de monolito legado`,
-      `  • <span class="term-highlight">whoami</span>                 : Perfil executivo e credenciais de Jaelson Almeida`,
+      `  • <span class="term-highlight">whoami</span>                 : Perfil executivo e credenciais de Jaelson R. Cunha`,
       `  • <span class="term-highlight">contact</span>                : Informações diretas de conexão e contato`,
       `  • <span class="term-highlight">clear</span>                  : Limpa o buffer da tela do terminal`
     ],
@@ -203,7 +203,7 @@ function initAgentTerminal() {
       `💡 <span style="color:#38BDF8">Resultado: Arquitetura modernizada com isolamento de falhas e escalabilidade horizontal.</span>`
     ],
     whoami: () => [
-      `👤 <span class="term-highlight">JAELSON ALMEIDA</span>`,
+      `👤 <span class="term-highlight">JAELSON R. CUNHA</span>`,
       `  • Cargo Atual    : Senior Software Architect & Agentic AI Specialist`,
       `  • Especialidade  : Orquestração Multi-Agente, LLM Harness, Sistemas Críticos & Legados`,
       `  • Localização    : Campo Grande - MS, Brasil`,
